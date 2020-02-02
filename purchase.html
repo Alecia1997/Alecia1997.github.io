@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flights | Airport</title>
+        <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+        
+        <!-- Include jQuery library files here -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery-ui-structure.css">
+        <link rel="stylesheet" href="css/jquery-ui-theme.css">
+        
+        <!-- Include project files here -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <script src="js/purchase.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="brand">
+                <img class="logo" alt="logo" src="images/plane.svg">
+                <span class="title">Airport</span>
+            </div>
+            <div class="menu">
+                <div class="item active">
+                    <a href="purchase.html">Purchase</a>
+                </div>
+                <div class="item">
+                    <a href="flights.html">Flights</a>
+                </div>
+                <div class="item">
+                    <a href="home.html">Home</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="focus">
+                <h1>Purchase</h1>
+                <form id="purchase-form">
+                    <label for="flight">Flight</label>
+                    <select id="flights">
+                        <option value="9976" data-price="2400">OR Thambo to King Shaka</option>
+                        <option value="9786" data-price="8200">OR Thambo to Suvarnabhumi</option>
+                        <option value="9988" data-price="3800">King Shaka to Cape Town Airport</option>
+                        <option value="9712" data-price="7200">King Shaka to Heathrow</option>
+                        <option value="9834" data-price="7800">OR Thambo to Ataturk</option>
+                        <option value="9636" data-price="6000">OR Thambo to Brandenburg</option>
+                    </select>
+                    <label for="tickets">Tickets</label>
+                    <input type="number" id="tickets">
+                    <input type="submit" id="purchase-submit" value="PURCHASE">
+                    <input type="submit" id="remove-submit" value="REMOVE">
+                </form>
+            </div>
+            <div class="box">
+                <h1>Purchases</h1>
+                <table id="purchase-table">
+                    <thead>
+                        <th width="30%">Flight Code</th>
+                        <th width="25%">Tickets</th>
+                        <th width="30%">Total Price</th>
+                    </thead>
+                    <tbody>
+                        <tr><td>9636</td><td>2</td><td>12000</td></tr>
+						 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; Airport 2017
+        </div>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flights | Airport</title>
+        <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+        
+        <!-- Include jQuery library files here -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery-ui-structure.css">
+        <link rel="stylesheet" href="css/jquery-ui-theme.css">
+        
+        <!-- Include project files here -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <script src="js/flights.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="brand">
+                <img class="logo" alt="logo" src="images/plane.svg">
+                <span class="title">Airport</span>
+            </div>
+            <div class="menu">
+                <div class="item">
+                    <a href="purchase.html">Purchase</a>
+                </div>
+                <div class="item active">
+                    <a href="flights.html">Flights</a>
+                </div>
+                <div class="item">
+                    <a href="home.html">Home</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="focus">
+                <h1>Filters</h1>
+                <select id="filter">
+                    <option value="ALL">All flights</option>
+                    <option value="DOM">Domestic flights only</option>
+                    <option value="INT">International flights only</option>
+                    <option value="SAA">SAA flights only</option>
+                    <option value="DUR">Flights to and from Durban only</option>
+                    <option value="AFT">Afternoon flights only</option>
+                </select>
+                <button id="filter-button">Filter</button>
+            </div>
+            <div class="box flight domestic">
+                <h1>South African Airways: 9976</h1>
+                <table id="9976">
+                    <thead>
+                        <th width="25%">Airline</th>
+                        <th width="8%">Code</th>
+                        <th width="30%">Origin</th>
+                        <th width="30%">Destination</th>
+                        <th width="7%">Departure</th>
+                    </thead>
+                    <tbody>
+                        <td class="airline" data-airline="SAA">South African Airways</td>
+                        <td class="code" data-code="9976">9976</td>
+                        <td class="origin" data-origin="JHB">OR Thambo (Johannesburg)</td>
+                        <td class="destination" data-destination="DUR">King Shaka (Durban)</td>
+                        <td class="departure" data-departure="17:05">17:05</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box flight international">
+                <h1>South African Airways: 9786</h1>
+                <table id="9786">
+                    <thead>
+                        <th width="25%">Airline</th>
+                        <th width="8%">Code</th>
+                        <th width="30%">Origin</th>
+                        <th width="30%">Destination</th>
+                        <th width="7%">Departure</th>
+                    </thead>
+                    <tbody>
+                        <td class="airline" data-airline="SAA">South African Airways</td>
+                        <td class="code" data-code="9786">9786</td>
+                        <td class="origin" data-origin="JHB">OR Thambo (Johannesburg)</td>
+                        <td class="destination" data-destination="BKK">Suvarnabhumi Airport (Bangkok)</td>
+                        <td class="departure" data-departure="15:35">15:35</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box flight domestic">
+                <h1>South African Airways: 9988</h1>
+                <table id="9988">
+                    <thead>
+                        <th width="25%">Airline</th>
+                        <th width="8%">Code</th>
+                        <th width="30%">Origin</th>
+                        <th width="30%">Destination</th>
+                        <th width="7%">Departure</th>
+                    </thead>
+                    <tbody>
+                        <td class="airline" data-airline="SAA">South African Airways</td>
+                        <td class="code" data-code="9988">9988</td>
+                        <td class="origin" data-origin="DUR">King Shaka (Durban)</td>
+                        <td class="destination" data-destination="CPT">Cape Town Airport (Cape Town)</td>
+                        <td class="departure" data-departure="22:45">22:45</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box flight international">
+                <h1>British Airways: 9712</h1>
+                <table id="9712">
+                    <thead>
+                        <th width="25%">Airline</th>
+                        <th width="8%">Code</th>
+                        <th width="30%">Origin</th>
+                        <th width="30%">Destination</th>
+                        <th width="7%">Departure</th>
+                    </thead>
+                    <tbody>
+                        <td class="airline" data-airline="BA">British Airways</td>
+                        <td class="code" data-code="9712">9712</td>
+                        <td class="origin" data-origin="DUR">King Shaka (Durban)</td>
+                        <td class="destination" data-destination="LHR">Heathrow (London)</td>
+                        <td class="departure" data-departure="09:00">09:00</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box flight international">
+                <h1>Turkish Airlines: 9834</h1>
+                <table id="9834">
+                    <thead>
+                        <th width="25%">Airline</th>
+                        <th width="8%">Code</th>
+                        <th width="30%">Origin</th>
+                        <th width="30%">Destination</th>
+                        <th width="7%">Departure</th>
+                    </thead>
+                    <tbody>
+                        <td class="airline" data-airline="TA">Turkish Airlines</td>
+                        <td class="code" data-code="9834">9834</td>
+                        <td class="origin" data-origin="JHB">OR Thambo (Johannesburg)</td>
+                        <td class="destination" data-destination="IST">Ataturk (Istanbul)</td>
+                        <td class="departure" data-departure="11:55">11:55</td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box flight domestic">
+                <h1>South African Airways: 9636</h1>
+                <table id="9636">
+                    <thead>
+                        <th width="25%">Airline</th>
+                        <th width="8%">Code</th>
+                        <th width="30%">Origin</th>
+                        <th width="30%">Destination</th>
+                        <th width="7%">Departure</th>
+                    </thead>
+                    <tbody>
+                        <td class="airline" data-airline="SAA">South African Airways</td>
+                        <td class="code" data-code="9636">9636</td>
+                        <td class="origin" data-origin="JHB">OR Thambo (Johannesburg)</td>
+                        <td class="destination" data-destination="BER">Brandenburg (Berlin)</td>
+                        <td class="departure" data-departure="14:20">14:20</td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; Airport 2017
+        </div>
+    </body>
+</html>

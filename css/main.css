@@ -1,0 +1,144 @@
+body * {
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.topnav {
+    height: 60px;
+    background-color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.topnav * {
+    font-family: 'Graduate', serif;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: 'Graduate', serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: rgb(240, 150, 0);
+}
+
+p {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.content {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.footer {
+    height: 20px;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Graduate', serif;
+    text-align: center;
+}
+
+.brand {
+    float: left;
+}
+
+.brand .title {
+    vertical-align: top;
+}
+
+.brand .logo {
+    height: 50px;
+    width: 50px;
+}
+
+.brand:hover {
+    cursor: pointer;
+	
+}
+
+.menu {
+    float: right;
+}
+
+.menu .item {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu .item.active {
+    background-color: rgb(240, 150, 0);
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    margin: 5px auto 5px auto;
+}
+
+.box h1 {
+    padding: 15px 10px 5px 10px;
+}
+
+.box p {
+    padding: 0px 10px 15px 10px;
+}
+
+.box table {
+    padding: 0px 10px 15px 10px;
+}
+
+.focus {
+    margin: 5px auto 5px auto;
+    width: 70%;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+.focus h1 {
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(94, 94, 200);
+    padding: 15px 10px 15px 10px;
+    color: white;
+}
+
+th {
+    text-align: left;
+}
+
+label, select, input {
+    text-align: left;
+    display: inline-block;
+    width: 35%;
+}
+
+input[type=submit] {
+    text-align: center;
+}
+
+.selected h1 {
+    color: rgb(94, 94, 200);
+}
+
+#groups {
+    margin: 10px;
+}
